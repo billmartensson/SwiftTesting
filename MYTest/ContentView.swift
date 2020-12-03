@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var resultString = ""
+    @State var enteredNumber = ""
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(resultString)
+                .padding()
+                .accessibilityIdentifier("resulttext")
+            
+            TextField("Siffra", text: $enteredNumber).padding()
+            
+            
+            Button(action: {
+                resultString = Person().oddEven(numberText: enteredNumber)
+            }) {
+                Text("Tryck")
+            }
+
+        }
     }
 }
 
