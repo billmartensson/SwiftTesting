@@ -9,7 +9,24 @@ import Foundation
 
 class Person {
     
+    /*
+     
+     */
     
+    /**
+        Nu ska kolla om det är jämt
+
+        - author:
+            Bill Kodare
+     
+        - returns:
+        Text så som "Ojämn", "Jämn" eller "FEL"
+
+        - parameters:
+            - numberText: Texten som ska kollas.
+
+
+    */
     func oddEven(numberText : String) -> String
     {
         // "235" -> "Ojämn"

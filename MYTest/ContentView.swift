@@ -21,6 +21,8 @@ struct ContentView: View {
             
             
             Button(action: {
+                
+                
                 resultString = Person().oddEven(numberText: enteredNumber)
             }) {
                 Text("Tryck")
